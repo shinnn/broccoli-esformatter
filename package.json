@@ -1,0 +1,41 @@
+{
+  "name": "broccoli-esformatter",
+  "version": "0.0.0",
+  "description": "JavaScript code formatter for Broccoli with esformatter",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "broccoli build test/actual && node node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/broccoli-esformatter.git"
+  },
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "url": "https://github.com/shinnn"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shinnn/broccoli-esformatter/issues"
+  },
+  "homepage": "https://github.com/shinnn/broccoli-esformatter",
+  "keywords": [
+    "broccoli-plugin",
+    "esformatter",
+    "format",
+    "coding style",
+    "beautify"
+  ],
+  "dependencies": {
+    "broccoli-filter": "^0.1.0",
+    "esformatter": "0.0.16"
+  },
+  "devDependencies": {
+    "broccoli": "^0.2.0",
+    "mocha": "^1.17.1"
+  }
+}
