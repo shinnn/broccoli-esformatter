@@ -4,7 +4,6 @@
 [![Build Status](https://travis-ci.org/shinnn/broccoli-esformatter.png?branch=master)](https://travis-ci.org/shinnn/broccoli-esformatter)
 [![Dependency Status](https://david-dm.org/shinnn/broccoli-esformatter.png)](https://david-dm.org/shinnn/broccoli-esformatter)
 [![devDependency Status](https://david-dm.org/shinnn/broccoli-esformatter/dev-status.png)](https://david-dm.org/shinnn/broccoli-esformatter#info=devDependencies)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/shinnn/broccoli-esformatter/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 JavaScript code formatter for [Broccoli](https://github.com/joliss/broccoli) with [esformatter](https://github.com/millermedeiros/esformatter)
 
@@ -13,6 +12,29 @@ JavaScript code formatter for [Broccoli](https://github.com/joliss/broccoli) wit
 ```
 npm i --save broccoli-esformatter
 ```
+
+## Example
+
+```javascript
+var esformatter = require('broccoli-esformatter');
+tree = esformatter(tree, options);
+```
+
+## API
+
+### esformatter(tree, options)
+
+`preset`, `indent`, `lineBreak` and `whiteSpace` options are available. See [the document of grunt-esformatter](https://github.com/jzaefferer/grunt-esformatter#options) for further details.
+
+In addition, you can use `config` option mentioned below.
+
+#### options.config
+
+Type: `String|Boolean` Default: `true`
+
+Specify the file path of [esformatter configuration file](https://github.com/millermedeiros/esformatter#configuration), such as `.esformatter`. When you set it to the path of `package.json`, this plugin uses `esformatter` property inside `package.json`.
+
+By default, or when you set this option `true` instead of any `String`, this plugin uses `.esformatter` or `package.json` as a configuration file.
 
 ## License
 
