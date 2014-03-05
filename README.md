@@ -13,6 +13,8 @@ JavaScript code formatter for [Broccoli](https://github.com/joliss/broccoli) wit
 npm i --save broccoli-esformatter
 ```
 
+Make sure you have installed [Node](http://nodejs.org/) before running this command.
+
 ## Example
 
 ```javascript
@@ -24,7 +26,7 @@ tree = esformatter(tree, options);
 
 ### esformatter(tree, options)
 
-`preset`, `indent`, `lineBreak` and `whiteSpace` options are available. See [the document of grunt-esformatter](https://github.com/jzaefferer/grunt-esformatter#options) for further details.
+`preset`, `indent`, `lineBreak` and `whiteSpace` options are available. See [the documentation of grunt-esformatter](https://github.com/jzaefferer/grunt-esformatter#options) for further details.
 
 In addition, you can use `config` option mentioned below.
 
