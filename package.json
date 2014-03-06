@@ -32,11 +32,11 @@
     "beautify"
   ],
   "dependencies": {
-    "broccoli-filter": "^0.1.0",
+    "broccoli-filter": "^0.1.1",
     "esformatter": "0.0.16"
   },
   "devDependencies": {
-    "broccoli": "^0.2.3",
+    "broccoli": "^0.2.4",
     "mocha": "^1.17.1",
     "rimraf": "^2.2.6"
   }
