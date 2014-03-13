@@ -36,7 +36,7 @@
     "esformatter": "0.0.16"
   },
   "devDependencies": {
-    "broccoli": "^0.2.4",
+    "broccoli": "^0.3.0",
     "mocha": "^1.17.1",
     "rimraf": "^2.2.6"
   }
