@@ -15,7 +15,7 @@ function EsFormatterFilter(inputTree, options) {
   if (!(this instanceof EsFormatterFilter)) {
     return new EsFormatterFilter(inputTree, options);
   }
-  
+
   this.inputTree = inputTree;
   this.options = assign({config: true}, options);
 }
@@ -29,27 +29,39 @@ EsFormatterFilter.prototype.targetExtension = 'js';
 EsFormatterFilter.prototype.processString = function(str) {
   var baseOpts = {};
   var configFilePath;
-  var pkg;
-  try {
-    pkg = require('./package.json');
-  } catch (e) {}
   
   if (this.options.config === true) {
+    var message = '';
+
     try {
       baseOpts = JSON.parse(fs.readFileSync('.esformatter'));
-    } catch (e) {
-      if (pkg && pkg.esformatter) {
-        baseOpts = pkg.esformatter;
+    } catch (configFileReadError) {
+      try {
+        var pkgConfig = require('./package.json');
+        if (! pkgConfig.hasOwnProperty('esformatter')) {
+          throw null;
+        } else if (typeof pkgConfig.esformatter === 'object') {
+          baseOpts = pkgConfig.esformatter;
+        } else {
+          message = "'esformatter' property in package.json is not an object.";
+        }
+      } catch (packageJsonReadError) {
+        message = 'Cannot find esformatter configuration file.';
       }
     }
+
+    if (message) {
+      console.warn(message);
+    }
+
   } else if (typeof this.options.config === 'string') {
-    var baseOpts = JSON.parse(fs.readFileSync(this.options.config));
+    baseOpts = JSON.parse(fs.readFileSync(this.options.config));
     // package.json
     if (typeof baseOpts.esformatter === 'object') {
       baseOpts = baseOpts.esformatter;
     }
   }
-    
+  
   return esformatter.format(str, assign(baseOpts, this.options));
 };
 
