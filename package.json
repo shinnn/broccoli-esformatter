@@ -1,6 +1,6 @@
 {
   "name": "broccoli-esformatter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "JavaScript code formatter for Broccoli with esformatter",
   "main": "index.js",
   "scripts": {
