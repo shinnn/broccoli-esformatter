@@ -26,6 +26,8 @@
     "esformatter",
     "format",
     "guide",
+    "rule",
+    "adjustment",
     "coding style",
     "indent",
     "whitespace",
@@ -36,8 +38,8 @@
     "esformatter": "0.0.16"
   },
   "devDependencies": {
-    "broccoli": "^0.4.1",
-    "mocha": "^1.18.0",
+    "broccoli": "^0.4.3",
+    "mocha": "^1.18.2",
     "rimraf": "^2.2.6"
   }
 }
