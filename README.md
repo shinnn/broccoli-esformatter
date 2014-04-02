@@ -3,7 +3,7 @@
 [![NPM version](https://badge.fury.io/js/broccoli-esformatter.svg)](http://badge.fury.io/js/broccoli-esformatter)
 [![Build Status](https://travis-ci.org/shinnn/broccoli-esformatter.svg?branch=master)](https://travis-ci.org/shinnn/broccoli-esformatter)
 [![Dependency Status](https://david-dm.org/shinnn/broccoli-esformatter.svg?theme=shields.io)](https://david-dm.org/shinnn/broccoli-esformatter)
-[![devDependency Status](https://david-dm.org/shinnn/broccoli-esformatter/dev-status.png)](https://david-dm.org/shinnn/broccoli-esformatter#info=devDependencies)
+[![devDependency Status](https://david-dm.org/shinnn/broccoli-esformatter/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/broccoli-esformatter#info=devDependencies)
 
 JavaScript code formatter for [Broccoli](https://github.com/joliss/broccoli) with [esformatter](https://github.com/millermedeiros/esformatter)
 
