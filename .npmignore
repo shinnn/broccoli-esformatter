@@ -1,4 +1,6 @@
 .travis.yml
+.jshintrc
+.esformatter
 test/
 Brocfile.js
 tmp/
