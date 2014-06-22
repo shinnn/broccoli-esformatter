@@ -1,6 +1,7 @@
+.editorconfig
+.esformatter
 .travis.yml
 .jshintrc
-.esformatter
-test/
 Brocfile.js
+test/
 tmp/
