@@ -9,7 +9,7 @@ JavaScript code formatter for [Broccoli](https://github.com/joliss/broccoli) wit
 
 ## Installation
 
-Install with [npm](https://www.npmjs.org/). (Make sure you have installed [Node](http://nodejs.org/).)
+Install with [npm](https://github.com/npm/npm#npm1----node-package-manager). (Make sure you have installed [Node](http://nodejs.org/).)
 
 ```
 npm i --save-dev broccoli-esformatter
@@ -26,7 +26,7 @@ tree = esformatter(tree, options);
 
 ### esformatter(tree, options)
 
-`preset`, `indent`, `lineBreak` and `whiteSpace` options are available. See [the documentation of grunt-esformatter](https://github.com/jzaefferer/grunt-esformatter#options) for further details.
+`preset`, [`indent`](https://github.com/millermedeiros/esformatter#indent), [`lineBreak`][linebreak_and_whitespace] and [`whiteSpace`][linebreak_and_whitespace] options are available. See [the documentation of esformatter](https://github.com/millermedeiros/esformatter#configuration) for further details.
 
 In addition, you can use `config` option mentioned below.
 
@@ -43,3 +43,5 @@ By default, or when you set this option `true` instead of any `String`, this plu
 Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT LIcense](./LICENSE).
+
+[linebreak_and_whitespace]: https://github.com/millermedeiros/esformatter#linebreak-and-whitespace
