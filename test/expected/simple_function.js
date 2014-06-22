@@ -1,0 +1,2 @@
+function fn()/* white space */{
+}
