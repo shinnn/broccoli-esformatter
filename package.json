@@ -7,7 +7,7 @@
     "lint": "jshint *.js test/*.js --reporter node_modules/jshint-stylish/stylish",
     "build": "rimraf test/actual && broccoli build test/actual",
     "pretest": "npm run-script lint & npm run-script build",
-    "test": "mocha --reporter spec test/test.js",
+    "test": "mocha test/test.js --reporter spec --timeout 300",
     "posttest": "rimraf tmp"
   },
   "repository": {
@@ -43,13 +43,16 @@
   ],
   "dependencies": {
     "broccoli-filter": "^0.1.6",
-    "esformatter": "^0.1.0"
+    "esformatter": "^0.3.0",
+    "object-assign": "^0.3.1"
   },
   "devDependencies": {
-    "broccoli": "^0.9.0",
-    "jshint": "^2.5.0",
-    "jshint-stylish": "^0.1.5",
-    "mocha": "^1.18.2",
-    "rimraf": "^2.2.6"
+    "bluebird": "^2.1.3",
+    "broccoli": "^0.12.3",
+    "broccoli-merge-trees": "^0.1.4",
+    "jshint": "^2.5.1",
+    "jshint-stylish": "^0.2.0",
+    "mocha": "^1.20.1",
+    "rimraf": "^2.2.8"
   }
 }
