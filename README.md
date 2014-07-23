@@ -24,7 +24,7 @@ tree = esformatter(tree, options);
 
 ## API
 
-### esformatter(tree, options)
+### esformatter(tree[, options])
 
 ### options
 
@@ -36,11 +36,11 @@ In addition, you can use `config` option mentioned below.
 
 #### options.config
 
-Type: `String|Boolean` Default: `true`
+Type: `String` (file path) or `Boolean`
 
-Specify the file path of [esformatter configuration file](https://github.com/millermedeiros/esformatter#configuration), such as `.esformatter`. When you set it to the path of `package.json`, this plugin uses `esformatter` property inside `package.json`.
+This option will be directly passed to the first argument of [`esformatter.rc()`](https://github.com/millermedeiros/esformatter#esformatterrcfilepath-customoptionsobject):
 
-By default, or when you set this option `true` instead of any `String`, this plugin uses `.esformatter` or `package.json` as a configuration file.
+If you set this option `false`, this plugin doesn't read any configuration files, but uses [`default` preset](https://github.com/millermedeiros/esformatter/blob/master/lib/preset/default.json) instead.
 
 ## License
 

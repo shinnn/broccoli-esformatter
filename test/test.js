@@ -16,20 +16,24 @@ function compareFiles(filename) {
 }
 
 describe('broccoli-esformatter', function() {
-  it('should read .esformatter file automatically.', function() {
+  it('should read options from .esformatter and package.json automatically.', function() {
     return compareFiles('simple_for_loop.js');
   });
+
   describe('config: false', function() {
     it('should ignore .esformatter file.', function() {
       return compareFiles('simple_while_loop.js');
     });
   });
+
   it('should accept "indent" option.', function() {
     return compareFiles('simple_object.js');
   });
+
   it('should accept "lineBreak" option.', function() {
     return compareFiles('simple_variables.js');
   });
+
   it('should accept "whiteSpace" option.', function() {
     return compareFiles('simple_function.js');
   });
