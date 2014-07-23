@@ -33,4 +33,8 @@ describe('broccoli-esformatter', function() {
   it('should accept "whiteSpace" option.', function() {
     return compareFiles('simple_function.js');
   });
+
+  it('should support plugins.', function() {
+    return compareFiles('quotes_and_comma.js');
+  });
 });

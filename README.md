@@ -26,7 +26,11 @@ tree = esformatter(tree, options);
 
 ### esformatter(tree, options)
 
-`preset`, [`indent`](https://github.com/millermedeiros/esformatter#indent), [`lineBreak`][linebreak_and_whitespace] and [`whiteSpace`][linebreak_and_whitespace] options are available. See [the documentation of esformatter](https://github.com/millermedeiros/esformatter#configuration) for further details.
+### options
+
+Type: `Object` Default: `{}`
+
+`preset`, [`indent`](https://github.com/millermedeiros/esformatter#indent), [`lineBreak`][linebreak_and_whitespace], [`whiteSpace`][linebreak_and_whitespace] options and [`plugins`](https://github.com/millermedeiros/esformatter#plugins) are available. See [the documentation of esformatter](https://github.com/millermedeiros/esformatter#configuration) for more information.
 
 In addition, you can use `config` option mentioned below.
 

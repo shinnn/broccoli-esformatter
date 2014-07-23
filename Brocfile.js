@@ -20,11 +20,19 @@ var whiteSpaceOption = esformatter('test/fixtures/whitespace', {
     value: '/* white space */'
   }
 });
+var plugins = esformatter('test/fixtures/plugin', {
+  plugins: ['esformatter-quotes', 'rocambole-commafirst'],
+  quotes: {
+    type: 'single',
+    avoidEscape: true
+  }
+});
 
 module.exports = mergeTrees([
   noOption,
   noConfig,
   indentOption,
   lineBreakOption,
-  whiteSpaceOption
+  whiteSpaceOption,
+  plugins
 ], {overwrite: true});
