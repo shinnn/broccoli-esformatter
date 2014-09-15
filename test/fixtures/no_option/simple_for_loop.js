@@ -1,1 +1,1 @@
-function repeat(str,num){var result='';for(var i=0;i<num;i++) result+=str;return result}
+function repeat(str,num){var res='';for(var i=0;i<num;i++) res+=str;return res}
